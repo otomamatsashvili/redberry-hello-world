@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #514848 0%, #332e2e 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hello_Main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Hello_Main img {
+    margin-top: 92px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Hello_Main H1 {
+    font-family: 'Press Start 2P';
+    font-size: 48px;
+    color: #eae2e2;
+    margin-top: 48px;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+    display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Hello_Main-greeting {
+    color: hsl(205, 55%, 76%);
+}
+
+.Hello_Main-name {
+    color: hsl(101, 76%, 68%);
+}
+
+.Hello_Main-name::first-letter {
+    text-transform: uppercase;
 }
